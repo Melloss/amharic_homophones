@@ -1,3 +1,26 @@
+/// A list of hexadecimal representations of Amharic homophone characters.
+///
+/// This list contains the hexadecimal values of all Amharic characters that have homophones.
+/// The characters are arranged in groups of 7, with each group representing a different homophone set.
+///
+/// **Example:**
+///
+/// The first 7 characters in the list represent the homophones of the character with hexadecimal value `1210`.
+/// These characters are:
+///
+/// * `1210` ሐ
+/// * `1211` ሑ
+/// * `1212` ሒ
+/// * `1213` ሓ
+/// * `1214` ሔ
+/// * `1215` ሕ
+/// * `1216` ሖ
+///
+/// The next 7 characters represent the homophones of the character with hexadecimal value `1280`, and so on.
+///
+/// **Note:**
+///
+/// This list is used by the `amharic_homophones` package to convert Amharic text with homophones to a normalized form.
 final homophoneLettersHex = [
   '1210',
   '1211',
