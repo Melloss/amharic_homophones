@@ -48,8 +48,12 @@ class AmharicHomophones {
         if (letterHex.startsWith('121') ||
             letterHex.startsWith('128') ||
             letterHex.startsWith('12b')) {
+          int position = letterPosition;
+          if (position == 3 && !letterHex.startsWith('12b')) {
+            position = 0;
+          }
           int tempHex = int.parse('1200', radix: 16) +
-              int.parse('$letterPosition', radix: 16);
+              int.parse('$position', radix: 16);
 
           temp.write(String.fromCharCode(tempHex));
         } else if (letterHex.startsWith('122')) {
@@ -70,6 +74,8 @@ class AmharicHomophones {
         } else {
           temp.write(data[i]);
         }
+      } else if (letterHex == '1203') {
+        temp.write(String.fromCharCode(0x1200));
       } else {
         temp.write(data[i]);
       }

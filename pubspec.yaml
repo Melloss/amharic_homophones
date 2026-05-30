@@ -1,10 +1,10 @@
 name: amharic_homophones
 description: "this package provides a function to convert Amharic text with homophones to a normalized form."
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/Melloss/amharic_homophones
 
 environment:
-  sdk: '>=3.4.0 <4.0.0'
+  sdk: ">=3.4.0 <4.0.0"
   flutter: ">=1.17.0"
 
 dependencies:
@@ -17,5 +17,3 @@ dev_dependencies:
   flutter_lints: ^3.0.0
 
 flutter:
-
- 
